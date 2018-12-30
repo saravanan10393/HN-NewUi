@@ -1,0 +1,29 @@
+.storyList{
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-auto-rows: min-content;
+  padding: 1rem;
+  background: var(--white);
+  overflow-y: auto;
+  margin: 0 auto;
+  min-width: 50%;
+}
+
+.loadMore{
+  display: grid;
+  justify-items: center;
+  border: none;
+  border-radius: 3px;
+}
+
+.actionButton{
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  font-size: var(--hintSize);
+  outline: none;
+}
+
+.actionButton:active{
+  opacity: 0.8;
+}

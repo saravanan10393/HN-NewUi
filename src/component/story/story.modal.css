@@ -1,0 +1,92 @@
+.backdrop {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgb(0,0,0, 0.3);
+}
+
+.portal{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.modal {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+  height: 95%;
+  width: 95%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background: var(--white);
+  border-radius: 0.5rem;
+  line-height: 1.3;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalHeader {
+  background: var(--primary-color);
+  color: var(--white);
+  display: grid;
+  align-items: center;
+  font-size: var(--titleSize);
+  padding: 0 1rem; 
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.modalHeader .closeIcon{
+  width: 2rem;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.modalContent {
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+.commentList {
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-auto-rows: min-content;
+}
+
+.comment{
+  font-size: var(--default);
+  color: var(--gray);
+  display: grid;
+  grid-row-gap: 0.5rem;
+  grid-auto-rows: min-content;
+
+  padding: 0 1rem;
+
+  border-bottom: 1px solid var(--placeholder);
+}
+
+.commentText{
+  padding: 0 1rem;
+}
+
+.commentFooter{
+  display: flex;
+  height: 1rem;
+  align-items: center;
+  font-size: var(--hintSize);
+  background: var(--placeholder);
+}
+
+.commentFooter > li {
+  margin-right: 0.5rem;
+}

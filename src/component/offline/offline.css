@@ -1,0 +1,10 @@
+.portalBox{
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  z-index: 5;
+  padding: 1rem;
+  font-size: var(--titleSize);
+  color: var(--white);
+  background: #000;
+}

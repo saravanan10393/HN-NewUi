@@ -1,0 +1,43 @@
+.story{
+  display: grid;
+  grid-row-gap: 0.5rem;
+}
+
+.story .storyTitle{
+  font-size: var(--titleSize);
+  color: #333;
+  cursor: pointer;
+}
+
+.hint {
+  display: flex;
+  color: #48546b;
+  font-size: var(--hintSize);
+  align-items: center;
+}
+
+.hint > li{
+  margin-right: 0.5rem;
+}
+
+.hint > .dot{
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #d0d2da;
+  border-radius: 50%;  
+}
+
+.placeholder .large{
+  height: 1.5rem;
+  background: var(--placeholder);
+}
+
+.placeholder .small{
+  height: 0.5rem;
+  background: var(--placeholder);
+}
+
+.link{
+  color: var(--primary-color);
+  cursor: pointer;
+}
