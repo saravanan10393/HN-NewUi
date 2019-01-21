@@ -10,4 +10,4 @@ script:
 - npm run build
 after_success:
 - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-- npm run lh -- --perf=90 https://hn.saravananr.com
+- npm run lh -- --perf=90 --pwa=100 https://hn.saravananr.com
