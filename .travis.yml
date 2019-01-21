@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- "8.9.0"
+install:
+-  npm install
+before_script:
+- npm install -g firebase-tools
+- npm i --save-dev https://github.com/ebidel/lighthouse-ci
+script:
+- npm run build
+after_success:
+- firebase deploy --token $FIREBASE_TOKEN --non-interactive
+- npm run lh -- --perf=90 https://hn.saravananr.com
