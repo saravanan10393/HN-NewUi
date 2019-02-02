@@ -1,8 +1,8 @@
 {
   "name": "Hacker News",
   "short_name": "HN",
-  "theme_color": "#1983d7",
-  "background_color": "#2196f3",
+  "theme_color": "#ff6600",
+  "background_color": "#ff6600",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",
