@@ -8,6 +8,6 @@ before_script:
 - npm i --save-dev https://github.com/ebidel/lighthouse-ci
 script:
 - npm run build
-# after_success:
-# - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-# - npm run lh -- --perf=80 https://hn.saravananr.com
+after_success:
+- firebase deploy --token $FIREBASE_TOKEN --non-interactive
+- npm run lh -- --perf=80 https://hn.saravananr.com
