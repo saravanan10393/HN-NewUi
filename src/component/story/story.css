@@ -11,20 +11,27 @@
 
 .hint {
   display: flex;
+  flex-wrap: wrap;
   color: #48546b;
   font-size: var(--hintSize);
   align-items: center;
 }
 
 .hint > li{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 0.5rem;
+  align-items: center;
+
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.hint > .dot{
+.hint .dot{
   width: 0.5rem;
   height: 0.5rem;
   background: #d0d2da;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 .placeholder .large{

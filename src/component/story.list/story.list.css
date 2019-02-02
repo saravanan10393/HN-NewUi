@@ -1,11 +1,10 @@
 .storyList{
   display: grid;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: 1rem;
   grid-auto-rows: min-content;
   padding: 1rem;
   background: var(--white);
   overflow-y: auto;
-  margin: 0 auto;
   min-width: 50%;
 }
 
