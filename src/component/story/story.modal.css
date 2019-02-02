@@ -43,6 +43,14 @@
   grid-template-columns: 1fr auto;
 }
 
+.modalHeader .modalTitle{
+  height: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 3rem;
+}
+
 .modalHeader .closeIcon{
   width: 2rem;
   height: 100%;

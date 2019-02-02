@@ -59,21 +59,23 @@ export default React.memo(function StoryItem(props){
           story.score &&
           <li>{story.score} points</li>
         }
-        <li className="dot" />
         <li>
-          {story.type} from  <Link to={`user/${story.by}`} className="link">{story.by}</Link>
+          <p className="dot"/>
+          <p>{story.type} from  <Link to={`user/${story.by}`} className="link">{story.by}</Link></p>
         </li>
         {/* <li className="dot" />
         <li>{story.type}</li> */}
         {
           story.descendants > 0 &&
-          <React.Fragment>
-            <li className="dot" />
-            <li className="link" onClick={openComment}>{story.descendants} comments</li>
-          </React.Fragment>
+          <li className="link" onClick={openComment}>
+            <p className="dot"/>
+            <p>{story.descendants} comments</p>
+          </li>
         }
-        <li className="dot" />
-        <li>{getDateStr(story.time)}</li>
+        <li>
+          <p className="dot"/>
+          <p>{getDateStr(story.time)}</p>
+        </li>
       </ul>
       {
         activeStory &&

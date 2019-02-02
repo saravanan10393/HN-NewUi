@@ -1,10 +1,16 @@
 .header{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.tabs{
   position: sticky;
   top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
+  overflow-x: auto;
   background: var(--primary-color);
 }
 

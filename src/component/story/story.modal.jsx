@@ -26,7 +26,7 @@ export default function StoryModal(props) {
       <div className="backdrop" onClick={props.onClose}/>
       <div className="modal">
         <div className="modalHeader">
-          <h3>{story.title}</h3>
+          <h3 className="modalTitle">{story.title}</h3>
           <p className="closeIcon" onClick={props.onClose}>X</p>
         </div>
         <div className="modalContent">
